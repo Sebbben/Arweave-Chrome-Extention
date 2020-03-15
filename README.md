@@ -9,6 +9,7 @@ An extention for chrome where you can see your arweave wallet status, difficulty
 
 Please consider donating :-)
 
+AR : kOljIqyIKZSAkwjLFNhMdVxxnTcxyNf_yI1bcYUy-lY
 
 XMR : ...
 
