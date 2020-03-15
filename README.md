@@ -11,6 +11,6 @@ Please consider donating :-)
 
 AR : kOljIqyIKZSAkwjLFNhMdVxxnTcxyNf_yI1bcYUy-lY
 
-XMR : ...
+XMR : 87XACdYrHB7BcDBpk7J3xBPJELWVnDvDnhyMf3H7obUPiHr9wXAxyyScRYB8nz9cVA2HqRzsjUMU13UH94yuqT41CLXvSCh
 
 BTC : ...
