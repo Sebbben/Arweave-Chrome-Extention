@@ -11,7 +11,7 @@ An extension for chrome where you can see your arweave wallet status, block diff
 
 
 About the extension´s features
-The extension has three main fearutes. The wallet status list, where the current balance of the wallet is displayed.
+The extension has three main fearutes. The wallet status list, where the current balance of the wallet is displayed. The list over people who want to buy, hoe much an for what price. The last main feature is the 10 element long history of the current and the nine last block difficulities.
 
 Please consider donating :-)
 
