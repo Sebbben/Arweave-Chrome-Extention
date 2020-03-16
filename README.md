@@ -1,17 +1,17 @@
-# Arweave-Chrome-Extention
-An extention for chrome where you can see your arweave wallet status, block difficulty hitory and bilaxy price for people who wants to buy AR
+# Arweave-Chrome-Extension
+An extension for chrome where you can see your arweave wallet status, block difficulty hitory and bilaxy price for people who wants to buy AR
 
 <img src="https://github.com/Sebbben/Arweave-Chrome-Extention/blob/master/arExt.png" width="400">
 
-* Navigate to chrome://extentions
+* Navigate to chrome://extensions
 * Activate developer mode in the to right
 * Push the Load unpacked button
 * Navigate to the place you downloaded the files and select the folder
-* The extention should now be installed
+* The extension should now be installed
 
 
-About the extention´s features
-The extention has three main fearutes. The wallet status list, where the current balance of the wallet is displayed.
+About the extension´s features
+The extension has three main fearutes. The wallet status list, where the current balance of the wallet is displayed.
 
 Please consider donating :-)
 
