@@ -5,18 +5,27 @@ const userBal = document.getElementById("userBal");
 const difficulty = document.getElementById("difficulty");
 const heightUrl = "https://arweave.net/info";
 const amountUrl =
-  "https://newapi.bilaxy.com/v1/orderbook?pair=AR_USDT&limit=2000";
+  "https://newapi.bilaxy.com/v1/orderbook?pair=AR_USDT&limit=5000";
 var wallets;
 var blockHeight;
 var resJSON;
 var difficuities = [];
 var diffDepth = 10;
+var buyAmountFilter;
+const amountFilter = document.getElementById("amountFilter");
 
 window.onload = () => {
   diffHistory = localStorage.getObject("diffHistory");
+  buyAmountFilter = Number(localStorage.getItem("amountFilter"));
   if (!diffHistory) diffHistory = [];
+  if (!buyAmountFilter) buyAmountFilter = 1;
   initWallets();
   getDiff();
+  amountFilter.onchange = () => {
+    buyAmountFilter = amountFilter.value;
+    localStorage.setItem("amountFilter", buyAmountFilter);
+    initWallets();
+  };
 };
 
 function getDiff() {
@@ -48,11 +57,13 @@ function updateDifficulty() {
 }
 
 function initWallets() {
+  console.log(buyAmountFilter);
   wallets = window.localStorage.getObject("wallets");
   if (!wallets) wallets = [];
+  buyAmount.innerHTML = "";
   resJSON = JSON.parse(httpGet(amountUrl))["bids"];
   for (i = 0; i < resJSON.length; i++) {
-    if (resJSON[i][1] >= 500) {
+    if (resJSON[i][1] >= Number(buyAmountFilter)) {
       var row = document.createElement("tr");
       var amount = document.createElement("td");
       amount.innerText = resJSON[i][1];
@@ -122,18 +133,4 @@ function httpGet(theUrl) {
   xmlHttp.open("GET", theUrl, false); // false for synchronous request
   xmlHttp.send(null);
   return xmlHttp.responseText;
-}
-
-function copyXMR() {
-  var copyText = document.getElementById("xmr");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-
-function copyAR() {
-  var copyText = document.getElementById("ar");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
 }

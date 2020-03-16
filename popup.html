@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <script src="prototypes.js"></script>
-    <title>Document</title>
+    <title>Arweave wallet stats</title>
   </head>
   <body>
     <div id="input">
@@ -26,6 +26,12 @@
     </div>
     <table id="amount">
       <thead>
+        <tr>
+          <td colspan="2">
+            Filter
+            <input type="number" id="amountFilter" value="500" />
+          </td>
+        </tr>
         <tr>
           <th>Amount</th>
           <th>
@@ -56,12 +62,8 @@
       <ul id="difficulty"></ul>
     </div>
     <div id="donate">
-      XMR:
-      <p onclick="copyXMR()" id="xmr">
-        87XACdYrHB7BcDBpk7J3xBPJELWVnDvDnhyMf3H7obUPiHr9wXAxyyScRYB8nz9cVA2HqRzsjUMU13UH94yuqT41CLXvSCh
-      </p>
-      AR: <br />
-      <p onclick="copyAR()" id="ar">
+      Donate AR:
+      <p onclick="copyAR" id="ar">
         kOljIqyIKZSAkwjLFNhMdVxxnTcxyNf_yI1bcYUy-lY
       </p>
     </div>
