@@ -1,0 +1,111 @@
+* {
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+  border: 2px solid #aaa;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+input {
+  outline: none;
+  border: 2px solid #aaa;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+body {
+  width: 400px;
+  height: 500px;
+}
+
+#container {
+  width: 400px;
+  height: 500px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#bal {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#amount {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#input {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#bal button {
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+#difficulty {
+  list-style: none;
+  border: 2px solid #aaa;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+#difficulty li:first-child {
+  color: limegreen;
+}
+
+li {
+  display: inline;
+  margin: 5px;
+}
+
+p {
+  display: inline;
+}
+
+#diff {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#donate {
+  position: absolute;
+  bottom: 0;
+}
+
+#donate p {
+  font-size: 0.75em;
+}

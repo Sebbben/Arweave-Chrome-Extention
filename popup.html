@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="prototypes.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="input">
+      <input
+        type="text"
+        name="walletAddr"
+        id="walletAddr"
+        placeholder="Wallet address"
+      />
+      <input
+        type="text"
+        name="walletName"
+        id="walletName"
+        placeholder="Wallet name"
+      />
+      <button id="addWallet">Add</button>
+    </div>
+    <table id="amount">
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>
+            <a
+              href="https://bilaxy.com/trade/AR_USDT"
+              rel="noopener noreferrer"
+              target="__blank"
+              >AR-Price
+            </a>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="buyAmount"></tbody>
+    </table>
+    <table id="bal">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Balance</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="userBal"></tbody>
+    </table>
+
+    <div id="diff">
+      <p>Difficulty:</p>
+      <ul id="difficulty"></ul>
+    </div>
+    <div id="donate">
+      XMR:
+      <p onclick="copyXMR()" id="xmr">
+        87XACdYrHB7BcDBpk7J3xBPJELWVnDvDnhyMf3H7obUPiHr9wXAxyyScRYB8nz9cVA2HqRzsjUMU13UH94yuqT41CLXvSCh
+      </p>
+      AR: <br />
+      <p onclick="copyAR()" id="ar">
+        kOljIqyIKZSAkwjLFNhMdVxxnTcxyNf_yI1bcYUy-lY
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

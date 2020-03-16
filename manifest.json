@@ -1,0 +1,11 @@
+{
+  "name": "Arweave stats",
+  "version": "1.0",
+  "description": "This is an extention for looking at your arweave stats",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
