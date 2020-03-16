@@ -7,6 +7,10 @@ An extention for chrome where you can see your arweave wallet status, block diff
 * Navigate to the place you downloaded the files and select the folder
 * The extention should now be installed
 
+
+About the extention´s features
+The extention has three main fearutes
+
 Please consider donating :-)
 
 AR : kOljIqyIKZSAkwjLFNhMdVxxnTcxyNf_yI1bcYUy-lY
