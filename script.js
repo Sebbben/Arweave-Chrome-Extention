@@ -18,7 +18,7 @@ window.onload = () => {
   diffHistory = localStorage.getObject("diffHistory");
   buyAmountFilter = Number(localStorage.getItem("amountFilter"));
   if (!diffHistory) diffHistory = [];
-  if (!buyAmountFilter) buyAmountFilter = 1;
+  if (!buyAmountFilter) buyAmountFilter = 500;
   initWallets();
   getDiff();
   amountFilter.onchange = () => {
