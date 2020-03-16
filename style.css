@@ -2,6 +2,15 @@
   overflow-x: hidden;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 10fr 1fr;
+  column-gap: 10px;
+  width: 400px;
+  height: 500px;
+}
+
 button {
   outline: none;
   border: 2px solid #aaa;
@@ -16,11 +25,6 @@ input {
   background-color: #fff;
   border-radius: 10px;
   padding: 5px;
-}
-
-body {
-  width: 400px;
-  height: 500px;
 }
 
 #container {
@@ -41,10 +45,9 @@ td {
 }
 
 #bal {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 a {
@@ -54,17 +57,17 @@ a {
 }
 
 #amount {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 #input {
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  transform: translateX(-50%);
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  float: right;
 }
 
 #bal button {
@@ -95,10 +98,11 @@ p {
 }
 
 #diff {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  transform: translateY(-18px);
 }
 
 #donate {
