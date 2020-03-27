@@ -24,28 +24,33 @@
       />
       <button id="addWallet">Add</button>
     </div>
-    <table id="amount">
-      <thead>
-        <tr>
-          <td colspan="2">
-            Filter
-            <input type="number" id="amountFilter" value="500" />
-          </td>
-        </tr>
-        <tr>
-          <th>Amount</th>
-          <th>
-            <a
-              href="https://bilaxy.com/trade/AR_USDT"
-              rel="noopener noreferrer"
-              target="__blank"
-              >AR-Price
-            </a>
-          </th>
-        </tr>
-      </thead>
-      <tbody id="buyAmount"></tbody>
-    </table>
+    <div id="amntContainer">
+      <table id="amount">
+        <thead>
+          <tr>
+            <td colspan="2">
+              Filter
+              <input type="number" id="amountFilter" value="500" />
+              <br />
+              <p>Total buyers:</p>
+              <p id="totBuyers"></p>
+            </td>
+          </tr>
+          <tr>
+            <th>Amount</th>
+            <th>
+              <a
+                href="https://bilaxy.com/trade/AR_USDT"
+                rel="noopener noreferrer"
+                target="__blank"
+                >AR-Price
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="buyAmount"></tbody>
+      </table>
+    </div>
     <table id="bal">
       <thead>
         <tr>

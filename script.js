@@ -2,15 +2,16 @@ const walletName = document.getElementById("walletName");
 const walletAddr = document.getElementById("walletAddr");
 const buyAmount = document.getElementById("buyAmount");
 const userBal = document.getElementById("userBal");
+const totBuyers = document.getElementById("totBuyers");
 const difficulty = document.getElementById("difficulty");
 const heightUrl = "https://arweave.net/info";
+const diffDepth = 14;
 const amountUrl =
   "https://newapi.bilaxy.com/v1/orderbook?pair=AR_USDT&limit=5000";
 var wallets;
 var blockHeight;
 var resJSON;
 var difficuities = [];
-var diffDepth = 10;
 var buyAmountFilter;
 const amountFilter = document.getElementById("amountFilter");
 
@@ -74,6 +75,7 @@ function initWallets() {
       buyAmount.append(row);
     }
   }
+  totBuyers.innerText = buyAmount.children.length;
   updateWallets();
 }
 
